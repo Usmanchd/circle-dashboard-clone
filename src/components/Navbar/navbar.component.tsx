@@ -27,7 +27,7 @@ export default function Navbar() {
         !isCollapsed
           ? {
               minWidth: "210px",
-              position: width <= 960 ? "absolute" : "sticky",
+              position: width <= 960 ? "fixed" : "sticky",
               zIndex: 10,
             }
           : {}
