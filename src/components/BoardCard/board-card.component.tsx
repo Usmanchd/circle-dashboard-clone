@@ -46,7 +46,10 @@ export default function BoardCard({
       onDragEnd={handleDragEnd}
       style={
         itemDragged === id
-          ? { border: "2px dashed #eaeaea", transform: "scale(1.1)" }
+          ? {
+              border: "2px dashed #eaeaea",
+              transform: "scale(1.1) rotate(-10deg)",
+            }
           : {}
       }
     >
