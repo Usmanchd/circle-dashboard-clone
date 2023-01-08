@@ -89,7 +89,7 @@ export default function Navbar() {
               className={styles.collapseArrow}
               style={{
                 left: 140,
-                top: 10,
+                top: 20,
                 transform: "rotate(180deg)",
               }}
             />
