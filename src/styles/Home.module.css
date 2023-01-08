@@ -1,0 +1,16 @@
+.main {
+  min-height: 100%;
+}
+
+.board {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  padding: 3rem;
+}
+
+@media screen and (max-width: 960px) {
+  .board {
+    flex-direction: column;
+  }
+}

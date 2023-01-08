@@ -1,0 +1,12 @@
+.layoutContainer {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  background-color: #fbfbfb;
+  min-height: 100vh;
+  position: relative;
+}
+
+.content {
+  width: 100%;
+}

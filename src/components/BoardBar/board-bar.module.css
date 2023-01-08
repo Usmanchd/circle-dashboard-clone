@@ -1,0 +1,64 @@
+.boardbar {
+  background-color: #ffffff;
+  padding: 0.6rem 2.2rem;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.heading p {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.iconWrapper {
+  padding: 12px 12px 8px 12px;
+  background-color: #eafeef;
+  border-radius: 8px;
+}
+
+.iconWrapper img {
+  filter: invert(47%) sepia(93%) saturate(413%) hue-rotate(84deg)
+    brightness(100%) contrast(86%);
+}
+
+.privateBoard {
+  display: flex;
+  gap: 18px;
+  height: 35px;
+  align-items: center;
+}
+
+.privateBoardheading {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.avatars {
+  display: flex;
+  position: relative;
+  width: 80px;
+  top: -17px;
+}
+
+.avatars img {
+  position: absolute;
+}
+
+@media screen and (max-width: 960px) {
+  .boardbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

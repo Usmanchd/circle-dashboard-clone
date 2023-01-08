@@ -1,0 +1,15 @@
+.badgeWrapper {
+  width: 100%;
+}
+
+.badge {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  top: 10px;
+  left: 16px;
+  z-index: 99;
+  background-color: #00c637;
+  border: 2px solid #ffffff;
+}
