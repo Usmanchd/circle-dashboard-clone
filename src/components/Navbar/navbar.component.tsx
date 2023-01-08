@@ -63,38 +63,45 @@ export default function Navbar() {
             <Navlink key={nav.name} {...nav} />
           ))}
         </ul>
-        <ul className={styles.links}>
-          {secondaryNav.map((nav) => (
-            <Navlink key={nav.name} {...nav} />
-          ))}
-          <div className={styles.divider} />
-          <div className={styles.avatars}>
-            {new Array(4).fill("mock").map((_, i) => (
-              <Badge key={i} dotStyle={isCollapsed ? { display: "none" } : {}}>
-                <Avatar
-                  src="/assets/icons/avatar.jpg"
-                  style={{
-                    zIndex: 5 - i,
-                    border: "2px solid #ffffff",
-                    left: isCollapsed ? 0 : i * 20,
-                  }}
-                />
-              </Badge>
+        <div>
+          <ul className={styles.links}>
+            {secondaryNav.map((nav) => (
+              <Navlink key={nav.name} {...nav} />
             ))}
-            <Image
-              src="/assets/icons/collapse-arrow.png"
-              width={14}
-              height={14}
-              alt=""
-              className={styles.collapseArrow}
-              style={{
-                left: 140,
-                top: 20,
-                transform: "rotate(180deg)",
-              }}
-            />
+            <div className={styles.divider} />
+          </ul>
+          <div style={{ height: 60 }}>
+            <div className={styles.avatars}>
+              {new Array(4).fill("mock").map((_, i) => (
+                <Badge
+                  key={i}
+                  dotStyle={isCollapsed ? { display: "none" } : {}}
+                >
+                  <Avatar
+                    src="/assets/icons/avatar.jpg"
+                    style={{
+                      zIndex: 5 - i,
+                      border: "2px solid #ffffff",
+                      left: isCollapsed ? 0 : i * 20,
+                    }}
+                  />
+                </Badge>
+              ))}
+              <Image
+                src="/assets/icons/collapse-arrow.png"
+                width={14}
+                height={14}
+                alt=""
+                className={styles.collapseArrow}
+                style={{
+                  left: 140,
+                  top: 20,
+                  transform: "rotate(180deg)",
+                }}
+              />
+            </div>
           </div>
-        </ul>
+        </div>
       </div>
     </aside>
   );
